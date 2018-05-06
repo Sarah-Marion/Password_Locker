@@ -70,6 +70,9 @@ def display_accounts():
     """
     return Credential.display_accounts()
 
+# def copy_password(password):
+#     return Credential.copy_cred(password)
+
 def main():
     print("Welcome to Password Locker")
     print("-"*10)
@@ -213,13 +216,13 @@ def main():
 
                 else:
                     print(f"{username} does not exist, please sign up.")
-            elif short_code == 'ex':
-                print("\n")
-                print("An interrupt detected...Exiting..")
-                print("\n")
-                break
-            else:
-                print("I really didn't get that. Please use the short codes")
+        elif short_code == 'ex':
+            print("\n")
+            print("An interrupt detected...Exiting..")
+            print("\n")
+            break
+        else:
+            print("I really didn't get that. Please use the short codes")
 
 if __name__ == '__main__':
     main()

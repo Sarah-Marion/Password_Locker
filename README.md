@@ -22,6 +22,12 @@
 * Contains docstrings to document methods and functions
 * Contains a test class for all the classes testing each individual method in a class
 
+## User Stories
+
+> * A user can create an account with details such as login and password
+> * A user can generate passwors for a new account
+> * Store existing login credentials
+
 ## Technologies Used
 
 > * Python3.6

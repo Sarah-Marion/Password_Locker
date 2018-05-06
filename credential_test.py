@@ -1,5 +1,6 @@
 import unittest
 from credential import Credential
+import pyperclip
 
 class credential_test(unittest.TestCase):
     """
@@ -91,7 +92,15 @@ class credential_test(unittest.TestCase):
         test_cred.save_cred()
         self.assertTrue(len(test_cred.password) > 2)
     
-    
+
+    # def test_copy_credentials(self):
+    #     """
+    #     test_copy_credentials to test if a user can copy an item to the clipboard
+    #     """
+    #     test_cred = Credential("github", "devsarahmarion@gmail.com","dev-Sarahgh")
+    #     test_cred.password = Credential.copy_credentials("github")
+    #     test_cred.save_cred()
+    #     self.assertEqual(test_cred.password,pyperclip.paste()) 
 
 if __name__ == "__main__":
     unittest.main()
